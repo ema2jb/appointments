@@ -30,7 +30,7 @@ export const ContactsPage = (props) => {
     if(contacts.some(contact => contact.name === name)){
       setDuplicate(true)
     }
-  }, [name])
+  }, [name, contacts])
 
   return (
     <div>
